@@ -1,0 +1,108 @@
+body {
+    position: absolute;
+    /* display: inline-block; */
+    width: 100%;
+}
+
+#maindiv {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+}
+
+#divd {
+    display: block;
+}
+
+#logo {
+    height: 50px;
+    width: 130px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+#searchbtn {
+    height: 30px;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    right: 400px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#searchbox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+#inputtext {
+    height: 30px;
+    width: 500px;
+    position: absolute;
+    top: 10px;
+    right: 500px;
+    justify-content: center;
+}
+
+#userinfo {
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.box {
+    display: block;
+    height: 80px;
+    width: 75px;
+    cursor: pointer;
+}
+
+@media (max-width: 1180px) and (max-width: 880px) {
+    #inputtext {
+        width: 200px;
+        left: 150px;
+        justify-content: center;
+    }
+    #searchbtn {
+        justify-content: center;
+        left: 350px;
+    }
+    #maindiv {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1120px) {
+    #inputtext {
+        width: 200px;
+        left: 150px;
+        justify-content: center;
+    }
+    #searchbtn {
+        justify-content: center;
+        left: 350px;
+    }
+    #maindiv {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 880px) and (max-width: 600px) {
+    #searchbtn {
+        right: 30%;
+        justify-content: center;
+    }
+    #inputtext {
+        right: 30%;
+        justify-content: center;
+    }
+}
