@@ -1,108 +1,139 @@
 body {
-    position: absolute;
-    /* display: inline-block; */
-    width: 100%;
+    background-color: black;
 }
 
-#maindiv {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    justify-content: center;
+
+/* TITLE STYLES */
+
+#title-div {
+    display: grid;
+    grid-template-columns: 100px 3fr auto;
 }
 
-#divd {
-    display: block;
+#input-div {
+    margin: auto;
+}
+
+#acc-div {
+    margin: auto 20px auto auto;
 }
 
 #logo {
-    height: 50px;
-    width: 130px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+#input-text {
+    height: 35px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding-left: 10px;
 }
 
 #searchbtn {
-    height: 30px;
-    width: 70px;
-    position: absolute;
-    top: 10px;
-    right: 400px;
-    cursor: pointer;
-    justify-content: center;
+    margin: auto;
 }
 
-#searchbox {
-    display: flex;
-    position: relative;
-    width: 100%;
-    justify-content: center;
+#searchbtn:hover {
+    background-color: rgb(31, 48, 57);
+    color: white;
 }
 
-#inputtext {
-    height: 30px;
-    width: 500px;
-    position: absolute;
-    top: 10px;
-    right: 500px;
-    justify-content: center;
+#sign-in {
+    color: white;
+    border: 0.8px solid grey;
 }
 
-#userinfo {
-    height: 40px;
-    width: 40px;
-    top: 5px;
-    position: absolute;
-    right: 10px;
+#sign-in:hover {
+    color: white;
+    border: 1.2px solid white;
+}
+
+#logo:hover {
+    filter: invert(1);
+}
+
+#home {
     cursor: pointer;
 }
+
+#input-text:focus {
+    color: white;
+    filter: invert(15%);
+}
+
+@media (max-width:830px) {
+    #input-div {
+        width: 80%;
+    }
+    #input-text {
+        width: 85%;
+    }
+}
+
+@media (max-width:760px) {
+    #input-div {
+        width: 70%;
+    }
+    #input-text {
+        width: 65%;
+    }
+}
+
+
+/* NAVIGATION DIV */
 
 .box {
-    display: block;
-    height: 80px;
-    width: 75px;
+    height: 45px;
+    width: 45px;
+    margin: 25px;
     cursor: pointer;
 }
 
-@media (max-width: 1180px) and (max-width: 880px) {
-    #inputtext {
-        width: 200px;
-        left: 150px;
-        justify-content: center;
-    }
-    #searchbtn {
-        justify-content: center;
-        left: 350px;
-    }
-    #maindiv {
-        justify-content: center;
-    }
+.home {
+    filter: invert(1);
 }
 
-@media (min-width: 600px) and (max-width: 1120px) {
-    #inputtext {
-        width: 200px;
-        left: 150px;
-        justify-content: center;
-    }
-    #searchbtn {
-        justify-content: center;
-        left: 350px;
-    }
-    #maindiv {
-        justify-content: center;
-    }
+.home:hover {
+    filter: invert(40%);
 }
 
-@media (max-width: 880px) and (max-width: 600px) {
-    #searchbtn {
-        right: 30%;
-        justify-content: center;
-    }
-    #inputtext {
-        right: 30%;
-        justify-content: center;
-    }
+.fav {
+    filter: invert(1);
+}
+
+.fav:hover {
+    filter: invert(40%);
+}
+
+.subs {
+    filter: invert(1);
+}
+
+.subs:hover {
+    filter: invert(40%);
+}
+
+#upl-img {
+    height: 40px;
+    width: 40px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#upl-img:hover {
+    filter: invert(75%);
+}
+
+#upload-div {
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+}
+
+#navdiv {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }

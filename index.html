@@ -13,20 +13,30 @@
 </head>
 
 <body>
-    <div id="divd">
-        <div id="maindiv">
-            <img id="logo" onclick="YTHomePage()" src="images/Logo.png" alt="Logo"></img>
-            <input type="text" id="inputtext" placeholder="Search">
-            <button id="searchbtn" onclick="SearchYT()">Search</button>
-            <img onclick="Googleacc()" id="userinfo" src="images/User.png" alt="User">
+    <div id="main-div">
+        <div id="title-div">
+            <a id="home">
+                <img id="logo" src="images/logo.png" alt="Logo">
+            </a>
+            <div id="input-div">
+                <input type="text" id="input-text" placeholder="Search">
+                <button id="searchbtn" class="btn btn-sm btn-light">Search</button>
+            </div>
+            <div id="acc-div">
+                <button id="sign-in" class="btn btn-outline-dark ">Sign In</button>
+            </div>
         </div>
-
-        <img class="box" src="images/Home.png" onclick="YTHomePage()" alt="Home">
-        <img class="box" src="images/Trending.png" onclick="YTTrending()" alt="Trending">
-        <img class="box" src="images/Subs.png" onclick="YTSubs()" alt="Subs">
-        <img class="box" src="images/Lib.png" onclick="YTLib()" alt="Lib">
+        <div id="navdiv">
+            <img class="box home" src="images/Home.png" alt="Home">
+            <img class="box fav" src="images/Fav.png" alt="Favorite">
+            <img class="box subs" src="images/Subs.png" alt="Subs">
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <div id="upload-div">
+        <a id="upload-btn"><img id="upl-img" src="images/Upload.png" alt="Upload-img"></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
 </body>
 
 </html>
