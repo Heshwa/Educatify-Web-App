@@ -5,9 +5,19 @@ body {
 
 /* TITLE STYLES */
 
+#brand-title {
+    color: white;
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 2px;
+    margin: auto 50px 5px 5px;
+}
+
 #title-div {
     display: grid;
-    grid-template-columns: 100px 3fr auto;
+    margin-top: 10px;
+    grid-template-columns: 50px 90px 3fr auto;
 }
 
 #input-div {
@@ -15,12 +25,46 @@ body {
 }
 
 #acc-div {
-    margin: auto 20px auto auto;
+    margin: auto 20px;
+}
+
+
+/* HAMBURGER MENU */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: auto auto auto 25px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 3.5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
 }
 
 #logo {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
 }
 
 #input-text {
@@ -30,10 +74,13 @@ body {
     border: 1px solid white;
     color: white;
     padding-left: 10px;
+    margin: auto auto 5px auto;
 }
 
 #searchbtn {
-    margin: auto;
+    position: absolute;
+    margin: auto 5px auto 5px;
+    height: 35px;
 }
 
 #searchbtn:hover {
@@ -41,9 +88,17 @@ body {
     color: white;
 }
 
+#rule {
+    width: 83%;
+    border: solid 1px;
+    border-color: white;
+    margin: auto 0 auto auto;
+}
+
 #sign-in {
     color: white;
     border: 0.8px solid grey;
+    margin-left: -5px;
 }
 
 #sign-in:hover {
@@ -55,7 +110,9 @@ body {
     filter: invert(1);
 }
 
-#home {
+#reloadhome {
+    display: flex;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -64,21 +121,39 @@ body {
     filter: invert(15%);
 }
 
-@media (max-width:830px) {
+@media (max-width:890px) {
     #input-div {
         width: 80%;
+        margin-left: 0;
     }
     #input-text {
         width: 85%;
     }
+    #brand-title {
+        text-align: center;
+        font-size: 10px;
+        margin: auto;
+    }
 }
 
-@media (max-width:760px) {
+@media (max-width:839px) {
     #input-div {
-        width: 70%;
+        width: 85%;
+        margin-left: 0;
     }
     #input-text {
-        width: 65%;
+        width: 80%;
+    }
+    .l {
+        display: flex;
+    }
+    .l #hom,
+    .l #fav,
+    .l #sub {
+        display: none;
+    }
+    .container {
+        margin: auto;
     }
 }
 
@@ -86,34 +161,48 @@ body {
 /* NAVIGATION DIV */
 
 .box {
-    height: 45px;
-    width: 45px;
-    margin: 25px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
     cursor: pointer;
 }
 
-.home {
-    filter: invert(1);
+.l {
+    text-align: center;
+    width: fit-content;
 }
 
-.home:hover {
+.l:hover {
     filter: invert(40%);
 }
 
-.fav {
-    filter: invert(1);
+.link {
+    display: flex;
 }
 
-.fav:hover {
+.link:hover {
     filter: invert(40%);
 }
 
-.subs {
+.link #hom,
+.link #fav,
+.link #sub {
+    width: auto;
+}
+
+.homeimg {
+    margin-left: 15px;
     filter: invert(1);
 }
 
-.subs:hover {
-    filter: invert(40%);
+.favimg {
+    margin-left: 15px;
+    filter: invert(1);
+}
+
+.subsimg {
+    margin-left: 15px;
+    filter: invert(1);
 }
 
 #upl-img {
@@ -121,19 +210,48 @@ body {
     width: 40px;
     filter: invert(1);
     cursor: pointer;
+    margin-right: 15px;
 }
 
 #upl-img:hover {
     filter: invert(75%);
 }
 
-#upload-div {
-    position: fixed;
-    bottom: 30px;
-    right: 35px;
+#navdiv {
+    display: block;
+    width: auto;
 }
 
-#navdiv {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+.brandx-title {
+    color: white;
+    font-family: 'Dela Gothic One';
+    font-size: 10px;
+    margin: auto;
+}
+
+#hom,
+#fav,
+#sub {
+    margin-left: 2px;
+    width: 100px;
+}
+
+@media (min-width: 750px and min-width: 1070px) {
+    #reloadhome {
+        display: flex;
+    }
+}
+
+@media (max-width: 1060px) {
+    #reloadhome {
+        margin-left: 0px;
+        display: block;
+        margin-right: 0px;
+        width: 80px;
+    }
+    #brand-title {
+        text-align: center;
+        font-size: 13px;
+        margin: auto;
+    }
 }
