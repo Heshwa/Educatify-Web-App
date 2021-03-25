@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educatify</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
 </head>
@@ -15,25 +16,39 @@
 <body>
     <div id="main-div">
         <div id="title-div">
-            <a id="home">
+            <div class="container" onclick="Click(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a id="reloadhome">
                 <img id="logo" src="images/logo.png" alt="Logo">
+                <p id="brand-title">Educatify</p>
             </a>
             <div id="input-div">
                 <input type="text" id="input-text" placeholder="Search">
                 <button id="searchbtn" class="btn btn-sm btn-light">Search</button>
             </div>
             <div id="acc-div">
+                <a id="upload-btn"><img id="upl-img" src="images/Upload.png" alt="Upload-img"></a>
                 <button id="sign-in" class="btn btn-outline-dark ">Sign In</button>
             </div>
         </div>
+        <hr id="rule">
         <div id="navdiv">
-            <img class="box home" src="images/Home.png" alt="Home">
-            <img class="box fav" src="images/Fav.png" alt="Favorite">
-            <img class="box subs" src="images/Subs.png" alt="Subs">
+            <div class="l">
+                <img class="box homeimg" src="images/Home.png" alt="Home">
+                <p id="hom" class="brandx-title">Home</p>
+            </div>
+            <div class="l">
+                <img class="box favimg" src="images/Fav.png" alt="Favorite">
+                <p id="fav" class="brandx-title">Favorites</p>
+            </div>
+            <div class="l">
+                <img class="box subsimg" src="images/Subs.png" alt="Subs">
+                <p id="sub" class="brandx-title">Subscription</p>
+            </div>
         </div>
-    </div>
-    <div id="upload-div">
-        <a id="upload-btn"><img id="upl-img" src="images/Upload.png" alt="Upload-img"></a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
